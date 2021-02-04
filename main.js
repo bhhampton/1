@@ -19,7 +19,7 @@ document.body.appendChild(renderer.domElement);
 const geometry = new THREE.BoxGeometry( 2, 2, 2 );
 //const material = new THREE.MeshBasicMaterial( {color: 0xffffcc} );
 
-const texture = new THREE.TextureLoader().load('textures/cloud.png')
+const texture = new THREE.TextureLoader().load('cloud.png')
 const material = new THREE.MeshBasicMaterial({ map: texture});
 cube = new THREE.Mesh( geometry, material );
 scene.add(cube);
